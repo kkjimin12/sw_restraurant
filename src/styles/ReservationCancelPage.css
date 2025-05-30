@@ -1,0 +1,72 @@
+.cancel-page {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 5vw 4vw;
+}
+
+.cancel-page h2 {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center;
+}
+
+.reservation-list {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.reservation-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 1.5rem;
+    background-color: #fff;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.reservation-info {
+    margin-bottom: 1.5rem;
+}
+
+.reservation-info p {
+    margin: 0.5rem 0;
+    font-size: 1.1rem;
+    color: #333;
+}
+
+.cancel-section {
+    border-top: 1px solid #eee;
+    padding-top: 1.5rem;
+    margin-top: 1rem;
+}
+
+.cancel-notice {
+    color: #666;
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+}
+
+.cancel-button {
+    background-color: #a52a4d;
+    color: white;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s;
+}
+
+.cancel-button:hover {
+    background-color: #8b1e3f;
+} 
+
+.popup-content p {
+    margin-bottom: 20px;
+}
+
+.popup-content button {
+    margin-top: 50px;
+    display: block;
+    margin: 0 auto;
+}

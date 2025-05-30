@@ -1,0 +1,63 @@
+/* TimeSelection */
+.time-box {
+    padding: 1.5vw;
+    border: 1px solid #6c6c6c;
+    border-radius: 10px;
+}
+
+.timepick-ui {
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    overflow-y: scroll;
+}
+
+.timepick-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 0.8vw;
+    border-bottom: 1.5px solid #000;
+}
+
+.timelist {
+    display: grid;
+    gap: 1.3vw;
+    grid-template-columns: 1fr 1fr;
+    padding: 0;
+}
+
+.timelist li {
+    padding: 8px 12px;
+    background-color: #f0f0f0;
+    border-radius: 4px;
+    text-align: center;
+}
+
+.timelist li.Time {
+    grid-column: span 2;
+    background-color: transparent;
+    border: none;
+    font-weight: bold;
+}
+
+.timelist li:not(.Time):hover {
+    background-color: #e0e0e0;
+}
+
+.timelist .selected {
+    background-color: #b8b8b8;
+}
+
+.timelist li.selected:hover {
+    background-color: #b8b8b8;
+}
+
+.gotoCalendar {
+    font-size: 1.6vw;
+    cursor: pointer;
+}
+
+.nop {
+    visibility: hidden;
+}

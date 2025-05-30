@@ -1,0 +1,17 @@
+.home {
+    text-align: center;
+    position: relative;
+    height: calc(100vh - 64px);
+    background-image: url('/home.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.home-phrase {
+    color: white;
+    font-size: 4rem;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

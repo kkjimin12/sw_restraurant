@@ -1,0 +1,25 @@
+/* ThemeCard */
+.themecard {
+    display: flex;
+    gap: 1.5vw;
+}
+
+.themecard .img img {
+    width: 20vw;
+}
+
+.datepage_theme {
+    max-width: 800px;
+    padding: 0 20px;
+    margin: 0;
+    line-height: 1.8;
+    color: #333;
+}
+
+.datepage_theme span {
+    font-family: 'Noto Serif KR', serif;
+    font-size: 2rem;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #8b1e3f;
+}
