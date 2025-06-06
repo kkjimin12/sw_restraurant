@@ -148,5 +148,32 @@ def cancel_reservation(reservation_id):
     except Exception as e:
         return jsonify({"success": False, "message": str(e)}),500
 
+@server.route("/api/check-username", methods=["POST"])
+def check_username():
+    data = request.get_json()
+    username = data.get("username")
+    
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute("SELECT id FROM users WHERE username = ?", (username,))
+    exists = c.fetchone() is not None
+    conn.close()
+    
+    return jsonify({"available": not exists})
+
+@server.route("/api/check-email", methods=["POST"])
+def check_email():
+    data = request.get_json()
+    email = data.get("email")
+    
+    conn = sqlite3.connect(DB_PATH)
+    c = conn.cursor()
+    c.execute("SELECT id FROM users WHERE email = ?", (email,))
+    exists = c.fetchone() is not None
+    conn.close()
+    
+    return jsonify({"available": not exists})
+
+
 if __name__ == "__main__":
     server.run(port=5000,debug=True)

@@ -30,7 +30,7 @@ function App() {
       <div>
         <nav className='nav'>
           <div className="nav-logo">
-            <Link to="/">LOGO</Link>
+          <Link to="/">DGK Dining</Link>
           </div>
           <div className="nav-buttons">
             {!isLoggedIn ? (
@@ -74,7 +74,7 @@ function App() {
                 <dd>TEL : 02-756-2486</dd>
               </dl>
             </div>
-            <div className="nav-logo"><Link to="/">LOGO</Link></div>
+            <div className="nav-logo"><Link to="/">DGK Dining</Link></div>
           </div>
           <div className="footer_copy">
             <span className="copy">

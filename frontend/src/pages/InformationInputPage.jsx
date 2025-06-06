@@ -1,6 +1,5 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
-import Footer from '../components/Footer';
 import StepIndicator from '../components/StepIndicator';
 import ThemeCard from '../components/ThemeCard';
 import Inputform from '../components/Inputform';
@@ -28,7 +27,6 @@ const SeatSelectedPage = () => {
                     </section>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 };

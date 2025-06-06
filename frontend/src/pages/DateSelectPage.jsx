@@ -1,11 +1,9 @@
 import React, {useEffect, useState} from 'react';
 import { useNavigate ,useLocation} from 'react-router-dom';
-import Header from '../components/Header';
 import ThemeCard from '../components/ThemeCard';
 import CalendarSection from '../components/CalendarSection';
 import TimeSelection from '../components/TimeSelection';
 import StepIndicator from '../components/StepIndicator';
-import Footer from '../components/Footer';
 import '../styles/DateSelectPage.css'
 
 const DateSelectPage = () => {
@@ -71,7 +69,6 @@ const DateSelectPage = () => {
                     </section>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 };

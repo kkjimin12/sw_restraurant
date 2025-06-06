@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap');
+
 .home {
     text-align: center;
     position: relative;
@@ -5,13 +7,51 @@
     background-image: url('/home.png');
     background-size: cover;
     background-position: center;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5%;
 }
 
-.home-phrase {
+.home-left {
+    position: relative;
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding-top: 17%;
+}
+
+.home-phrase-main {
     color: white;
-    font-size: 4rem;
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+    font-family: 'Playfair Display', serif;
+    font-size: 5rem;
+    margin: 0;
+    text-align: center;
+}
+
+.home-phrase-sub {
+    color: white;
+    font-size: 1.5rem;
+    margin: 20px 0 0 0;
+    text-align: center;
+}
+
+.home-right {
+    width: 43%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.home-right p {
+    color: white;
+    font-size: 1.1rem;
+    margin: 0;
+    line-height: 1.8;
+    white-space: pre-line;
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 20px;
+    border-radius: 10px;
 }

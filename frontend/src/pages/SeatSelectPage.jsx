@@ -1,7 +1,5 @@
 import React from 'react';
 import {useLocation} from 'react-router-dom';
-import Header from '../components/Header';
-import Footer from '../components/Footer';
 import StepIndicator from '../components/StepIndicator';
 import SeatSelection from '../components/SeatSelection';
 import '../styles/SeatSelectedPage.css'
@@ -26,7 +24,6 @@ const SeatSelectedPage = () => {
                     </section>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 };

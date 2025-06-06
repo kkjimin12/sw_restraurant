@@ -61,12 +61,35 @@
     background-color: #8b1e3f;
 } 
 
-.popup-content p {
+.popup p {
     margin-bottom: 20px;
 }
 
-.popup-content button {
-    margin-top: 50px;
+.popup button {
+    margin-top: 40px;
+    background-color: #000;
+    color: white;
+    border-radius: 4px;
     display: block;
     margin: 0 auto;
+    padding: 10px;
+}
+
+.popup button:hover {
+    background-color: #333;
+}
+
+.no-reservations {
+    text-align: center;
+    font-size: 18px;
+    color: #666;
+    padding: 150px 0;
+}
+.no-reservations button{
+    background-color: #8b1e3f;
+    padding: 5px 10px;
+    border-radius: 5px;
+    color: #fff;
+    margin-top: 30px;
+    cursor: pointer;
 }

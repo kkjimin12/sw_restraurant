@@ -31,10 +31,12 @@ body, html {
 }
 
 .nav-logo a {
+  font-family: 'Playfair Display', serif;
   font-size: 1.5rem;
   font-weight: bold;
-  color: white;
+  color: #fff;
   text-decoration: none;
+  text-shadow: 2px 2px 4px #a52a4d;
 }
 
 .nav-buttons {
