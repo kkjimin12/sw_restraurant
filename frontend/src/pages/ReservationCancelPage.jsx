@@ -8,7 +8,6 @@ const ReservationCancelPage = () => {
     const [error, setError] = useState(null);
     const nav = useNavigate();
 
-
     const handelGoReserve = () =>{
         nav('/date_reservation')
     }
@@ -100,14 +99,14 @@ const ReservationCancelPage = () => {
                     setReservations(updatedReservations);
                     setShowPopup(true);
                 }else{
-                    setError(data.message || "취소 실패")
+                    setError(prev => ({...prev, [reservation.id]:data.message||"취소 실패"}));
                 }
             }catch(e){
-                setError("서버 오류가 발생했습니다.");
+                setError(prev => ({...prev, [reservation.id]:"서버 오류가 발생했습니다."}));
                 console.error(e);
             }
         }else{
-            setError("예약은 하루 전까지 취소할 수 있습니다.");
+            setError(prev => ({ ...prev, [reservation.id]: "예약은 하루 전까지 취소할 수 있습니다." }));
         }
     };
 
@@ -134,7 +133,9 @@ const ReservationCancelPage = () => {
                                 </div>
                                 <div className="cancel-section">
                                     <p className="cancel-notice">예약은 하루 전에만 취소가 가능합니다. 정말로 취소하시겠습니까?</p>
-                                    {error && <div>{error}</div>}
+                                    {error && error[reservation.id] && (
+                                        <div className="error-message">{error[reservation.id]}</div>
+                                    )}
                                     <button 
                                         className="cancel-button"
                                         onClick={() => handleCancel(reservation)}
